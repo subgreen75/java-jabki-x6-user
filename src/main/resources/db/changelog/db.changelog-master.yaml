@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-scheme
+      author: prazumov
+      changes:
+        - sqlFile:
+            path: 20260110_1807_init_scheme.sql
+            relativeToChangelogFile: true

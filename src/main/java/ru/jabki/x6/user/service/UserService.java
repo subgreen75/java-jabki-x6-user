@@ -41,8 +41,8 @@ public class UserService {
     public User update(User user) {
         validate(user);
         User existsUser = getById(user.getId());
-        existsUser.setFirst_name(user.getFirst_name());
-        existsUser.setLast_name(user.getLast_name());
+        existsUser.setFirstName(user.getFirstName());
+        existsUser.setLastName(user.getLastName());
         existsUser.setEmail(user.getEmail());
         existsUser.setLogin(user.getLogin());
         return userRepository.update(user);
@@ -53,7 +53,7 @@ public class UserService {
             throw new UserException("Пользователь не может быть пустым");
         }
 
-        if (!StringUtils.hasText(user.getFirst_name())) {
+        if (!StringUtils.hasText(user.getFirstName())) {
             throw new UserException("Имя пользователя не может быть пустым");
         }
 

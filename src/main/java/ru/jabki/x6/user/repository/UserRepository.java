@@ -64,8 +64,8 @@ public class UserRepository {
         final MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", user.getId());
         params.addValue("login", user.getLogin());
-        params.addValue("first_name", user.getFirst_name());
-        params.addValue("last_name", user.getLast_name());
+        params.addValue("first_name", user.getFirstName());
+        params.addValue("last_name", user.getLastName());
         params.addValue("email", user.getEmail());
         return params;
     }

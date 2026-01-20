@@ -6,3 +6,11 @@ databaseChangeLog:
         - sqlFile:
             path: 20260110_1807_init_scheme.sql
             relativeToChangelogFile: true
+
+  - changeSet:
+      id: init-table-user
+      author: prazumov
+      changes:
+        - sqlFile:
+            path: 20260110_1814_init_user_table.sql
+            relativeToChangelogFile: true
